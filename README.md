@@ -44,11 +44,11 @@ counter value: 1000, time elapsed: 0.0312232
 ```
 
 ## Example
-To be continue... You can check out [test](tests/main.cpp).
+To be continue... You can check out the [test](tests/main.cpp).
 
 Mainly in these procedures:
 1. Create thread pool with:  `ThreadPool threadPool(threadNum);` 
 2. Find a place to save your task, like `std::vector<std::future<TaskFuncRetType>> tasks;`
-3. Call `threadPool(taskfunc)` to leave your task function to be executed by the thread.
+3. Call `tasks.emplace_back(threadPool.addTask(taskfunc))` to leave your task function executed by the thread.
 4. Use `std::future::wait_for(timeout)` to check weather the task finished.
 5. Use `std::future::get()` to obtain the task function return value.
