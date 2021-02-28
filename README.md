@@ -44,7 +44,7 @@ counter value: 1000, time elapsed: 0.0312232
 ```
 
 ## Example
-To be continue... You can check out the [test](tests/main.cpp).
+To be continued... You can check out the [test](tests/main.cpp).
 
 Mainly in these procedures:
 1. Create thread pool with:  `ThreadPool threadPool(threadNum);` 
