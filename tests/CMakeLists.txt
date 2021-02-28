@@ -1,0 +1,3 @@
+aux_source_directory(. inkneko_thread_pool_test_source)
+add_executable(thread_pool_test ${inkneko_thread_pool_test_source})
+target_link_libraries(thread_pool_test inkneko_thread_pool)
